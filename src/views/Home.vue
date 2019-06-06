@@ -1,13 +1,17 @@
 <template>
   <div class="home">
+    <Experience/>
   </div>
 </template>
 
 <script>
 
+import Experience from '../components/Experience'
+
 export default {
   name: "home",
   components: {
+    Experience,
   }
 };
 </script>
