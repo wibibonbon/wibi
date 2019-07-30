@@ -1,5 +1,7 @@
 <template>
+<div class="section">
 	<div class="container">
+		<div class="content">
 		<div id="timeline">
 			<TimeLineEntry
 				v-for="(entry, i) in entries"
@@ -8,8 +10,9 @@
         :entry="entry"
 			/>
 		</div>
+		</div>
 	</div>
-
+</div>
 </template>
 
 <script>
@@ -35,18 +38,7 @@ export default {
 <style scoped lang="scss">
 
 
-// Variables
-$bg-body: #f9f9f9;
 
-$primary-color: $blue;
-$secondary-color: $blue;
-
-
-// Typography
-$base-font: helvetica, arial, tahoma, verdana;
-$base-font-title: "Dosis", arial, tahoma, verdana;
-
-$base-font-color: #726f77;
 
 // Timeline
 $timeline-color: $primary-color;
@@ -73,24 +65,6 @@ $timeline-color: $primary-color;
 	-moz-box-sizing: border-box;
 }
 
-body, html {
-	height: 100%;
-}
-body {
-	background: $bg-body;
-	background-size: cover;
-	margin: 0;
-	padding: 0;
-	font-family: $base-font;
-	line-height: 20px;
-	font-size: 14px;
-	color: $base-font-color;
-}
-
-.container {
-	max-width: 1100px;
-	margin: 0 auto;
-}
 
 
 // Timeline
@@ -98,7 +72,6 @@ body {
 	width: 100%;
   margin: 30px auto;
 	position: relative;
-  padding: 0 10px;
 	@include prefix(transition, all .4s ease);
 
 	&:before {

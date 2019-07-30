@@ -1,17 +1,31 @@
 <template>
   <div class="home">
+            <Title/>
+
+        <AboutMe/>
+        <Portfolio/>
+
     <Experience/>
+            <Contact/>
+
   </div>
 </template>
 
 <script>
-
+import Title from '../components/Title'
+import AboutMe from '../components/AboutMe'
+import Portfolio from '../components/Portfolio'
 import Experience from '../components/Experience'
+import Contact from '../components/Contact'
 
 export default {
   name: "home",
   components: {
+    Title,
+    AboutMe,
+    Portfolio,
     Experience,
+    Contact,
   }
 };
 </script>

@@ -1,0 +1,40 @@
+{
+    "entries" :[{
+        "dates": "2013",
+        "img":"/images/MA.jpg",
+        "short_text":"Multispectral Image Analysis"
+    },
+    {
+        "dates": "2014",
+        "img":"/images/BA.jpg",
+        "short_text":"Infrared Image Fusion"
+    },
+    {
+        "dates": "2015",
+        "img":"/images/FP.jpg",
+        "short_text":"Surface Parameterisation"
+    },
+    {
+        "dates": "2016",
+        "img":"/images/Bunny.jpg",
+        "short_text":"WebGL Shading"
+    },
+    {
+        "dates": "2017",
+        "img":"/images/Game.jpg",
+        "short_text":"Horror Game in Unreal"
+    },
+    {
+        "dates": "2018",
+        "img":"/images/Movie.jpg",
+        "short_text":"Voxelmania Movie"
+    },
+    {
+        "dates": "2019",
+        "img":"/images/OktopusRiff.jpg",
+        "short_text":"3D Engine"
+    }
+    
+    ]}
+
+
