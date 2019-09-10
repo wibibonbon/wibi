@@ -14,7 +14,7 @@
 <script>
 import Title from '../components/Title'
 import AboutMe from '../components/AboutMe'
-import Portfolio from '../components/Portfolio'
+import Portfolio from '../components/PortfolioGrid'
 import Experience from '../components/Experience'
 import Contact from '../components/Contact'
 

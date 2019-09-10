@@ -3,7 +3,11 @@
     <div class="container">
       <div class="content">
           <div class="selected-item"> 
-
+            <img :src="activeEntry.img"/>
+            <div>
+              <div class="title">{{activeEntry.short_text}}</div>
+                <div class="info">{{activeEntry.long_text}}</div>
+            </div>
 
           </div>
 
@@ -34,6 +38,7 @@ export default {
             numEntries:3,
             interval: null,
             isActive: false,
+            activeEntry: null,
         }
         
     },
@@ -56,12 +61,13 @@ export default {
           
           setTimeout(()=>{
                       this.displayEntries.push(this.displayEntries[0])
-
+          
           this.isActive=true
                     }
 ,5500)
           setTimeout(()=>{
           this.displayEntries.shift()
+          this.activeEntry = this.displayEntries[4]
           this.isActive=false
                     }
 ,6500)
@@ -81,10 +87,9 @@ export default {
 $itemwidth:300px;
 $itemheight:200px;
 .content{
-  margin:auto;
+  //margin:auto;
 }
 .carousel{
-
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -100,10 +105,10 @@ $itemheight:200px;
   z-index: 10;
   overflow: hidden;
   height: $itemheight;
-justify-content: center;
+  justify-content: center;
   display: flex;
   transform: none;
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    //transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 
 }
 
@@ -116,13 +121,15 @@ justify-content: center;
   z-index: 5;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -50%;
-  background-position-y: 50%;
+  background-position-x: 50%;
+  //background-position-y: 50%;
   filter:grayscale(100%);
+  
   &.active{
+    /*
     animation: move 1s ease-in-out;
     -moz-animation: move 1s ease-in-out;
-    -webkit-animation: move 1s ease-in-out;
+    -webkit-animation: move 1s ease-in-out;*/
   }
 }
 .short-text{
