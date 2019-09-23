@@ -1,14 +1,13 @@
 <template>
-  <div class="home">
-            <Title/>
+    <div class="home">
+        <Title />
 
-        <AboutMe/>
-        <Portfolio/>
+        <AboutMe />
+        <Portfolio />
 
-    <Experience/>
-            <Contact/>
-
-  </div>
+        <Experience />
+        <Contact />
+    </div>
 </template>
 
 <script>
@@ -19,15 +18,15 @@ import Experience from '../components/Experience'
 import Contact from '../components/Contact'
 
 export default {
-  name: "home",
-  components: {
-    Title,
-    AboutMe,
-    Portfolio,
-    Experience,
-    Contact,
-  }
-};
+    name: 'home',
+    components: {
+        Title,
+        AboutMe,
+        Portfolio,
+        Experience,
+        Contact,
+    },
+}
 </script>
 
 <style scoped lang="scss">
@@ -38,5 +37,6 @@ export default {
     overflow-x: hidden;
     position: absolute;
     top: 0;
+    z-index: -5;
 }
 </style>
