@@ -1,13 +1,11 @@
 <template>
     <div class="home" ref="home">
-        <Title @scrollToY="scrollToY" />
-        <Navbar ref="nav" />
-
-        <AboutMe />
-        <Portfolio />
-
-        <Experience />
-        <Contact />
+        <Title @scrollToY="scrollToY" ref="title" />
+        <Navbar ref="nav" @scrollToItem="scrollToItem" />
+        <AboutMe ref="about" />
+        <Portfolio ref="portfolio" />
+        <Experience ref="timeline" />
+        <Contact ref="contact" />
     </div>
 </template>
 
@@ -33,6 +31,13 @@ export default {
         scrollToY(y) {
             console.log('scroll down 2: ' + y)
             window.scrollTo({ top: y, behavior: 'smooth' })
+        },
+        scrollToItem(item) {
+            //console.log('scroll item: ' + this.$refs[item].tagName)
+            let x = this.$refs[item].$el.offsetTop
+            console.log(item)
+            console.log(x)
+            window.scrollTo({ top: x, behavior: 'smooth' })
         },
     },
     handleScroll() {

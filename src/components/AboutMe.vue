@@ -1,5 +1,5 @@
 <template>
-    <div class="section"></div>
+    <div class="section" ref="me"></div>
 </template>
 
 <script>

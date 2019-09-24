@@ -1,5 +1,5 @@
 <template>
-    <div class="section">
+    <div class="section" ref="portfolio">
         <div class="container">
             <div class="content">
                 <div classs="title">Portfolio</div>
@@ -72,7 +72,6 @@ export default {
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
-
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
@@ -85,15 +84,18 @@ export default {
     backface-visibility: hidden;
 }
 .flip-card-front {
-    background-color: #bbb;
-    color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 50%;
 }
 .flip-card-back {
-    background-color: white;
-    color: $blue;
+    display: grid;
+    align-content: center;
+    background-color: $primary-color;
+    color: $white;
     transform: rotateY(180deg);
+}
+p {
+    margin: 0;
 }
 </style>

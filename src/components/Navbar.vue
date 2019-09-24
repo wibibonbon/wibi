@@ -1,8 +1,10 @@
 <template>
     <div class="navbar" :class="{'sticky': isSticky}" ref="navbar">
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <label @click="nav('title')">Home</label>
+        <label @click="nav('about')">That's me</label>
+        <label @click="nav('portfolio')">Portfolio</label>
+        <label @click="nav('timeline')">The past</label>
+        <label @click="nav('contact')">Contact</label>
     </div>
 </template>
 
@@ -23,6 +25,9 @@ export default {
                 this.$refs.navbar.classList.remove('sticky')
             }
         },
+        nav(item) {
+            this.$emit('scrollToItem', item)
+        },
     },
     mounted() {
         this.sticky = this.$refs.navbar.offsetTop
@@ -41,19 +46,29 @@ export default {
     background-color: $pink;
     margin: 0;
     padding: 0;
+    padding-left: 14px;
+    height: 40px;
     width: 100vw;
-    height: 60px;
 }
 
 /* Navbar links */
-.navbar a {
+.navbar label {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    margin: 0;
-    padding: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 14px;
+    padding-right: 14px;
+
     text-decoration: none;
+}
+.navbar label:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
 }
 .sticky {
     position: fixed;

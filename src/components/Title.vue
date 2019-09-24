@@ -206,6 +206,7 @@ export default {
 }
 .section {
     position: relative;
+    padding: 0;
 }
 .wrapper {
     width: 100vw;

@@ -1,10 +1,7 @@
 <template>
-  <div class="section">
-  </div>
+    <div class="section" ref="contact"></div>
 </template>
 
 <script>
-export default {
-    
-}
+export default {}
 </script>
