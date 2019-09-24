@@ -2,6 +2,8 @@
     <div class="section" ref="timeline">
         <div class="container">
             <div class="content">
+                <div class="title">The road so far.</div>
+
                 <div id="timeline">
                     <TimeLineEntry
                         v-for="(entry, i) in entries"
@@ -90,7 +92,7 @@ $timeline-color: $white;
 @media screen and (max-width: 768px) {
     #timeline {
         margin: 30px;
-        padding: 0px;
+        //padding: 0px;
         width: 90%;
         &:before {
             left: 0;

@@ -2,7 +2,7 @@
     <div class="section" ref="portfolio">
         <div class="container">
             <div class="content">
-                <div classs="title">Portfolio</div>
+                <div class="title">Work and fun.</div>
                 <div class="flex-grid">
                     <div
                         class="flip-card grid-item"
@@ -15,9 +15,7 @@
                             <div
                                 class="flip-card-front"
                                 :style="{ backgroundImage: 'url(' + entry.img + ')' }"
-                            >
-                                <!--img :class="[{active:isActive},'grid-item item']" :src="entry.img" /-->
-                            </div>
+                            ></div>
                             <div class="flip-card-back">
                                 <h1>John Doe</h1>
                                 <p>Architect & Engineer</p>
@@ -95,6 +93,7 @@ export default {
     color: $white;
     transform: rotateY(180deg);
 }
+
 p {
     margin: 0;
 }

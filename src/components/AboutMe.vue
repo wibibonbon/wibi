@@ -1,5 +1,7 @@
 <template>
-    <div class="section" ref="me"></div>
+    <div class="section" ref="me">
+        <div class="title">Yep, that's me.</div>
+    </div>
 </template>
 
 <script>

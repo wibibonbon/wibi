@@ -56,7 +56,7 @@ export default {
 
 <style scoped lang="scss">
 // Variables
-$bg-body: #f9f9f9;
+$bg-body: $sand;
 
 $primary-color: $blue;
 $secondary-color: $blue;

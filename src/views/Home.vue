@@ -1,11 +1,13 @@
 <template>
     <div class="home" ref="home">
-        <Title @scrollToY="scrollToY" ref="title" />
-        <Navbar ref="nav" @scrollToItem="scrollToItem" />
-        <AboutMe ref="about" />
-        <Portfolio ref="portfolio" />
-        <Experience ref="timeline" />
-        <Contact ref="contact" />
+        <Background>
+            <Title @scrollToY="scrollToY" ref="title" />
+            <Navbar ref="nav" @scrollToItem="scrollToItem" />
+            <AboutMe ref="about" />
+            <Portfolio ref="portfolio" />
+            <Experience ref="timeline" />
+            <Contact ref="contact" />
+        </Background>
     </div>
 </template>
 
@@ -16,6 +18,7 @@ import Portfolio from '../components/PortfolioGrid'
 import Experience from '../components/Experience'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
+import Background from '../components/Background'
 
 export default {
     name: 'home',
@@ -26,6 +29,7 @@ export default {
         Portfolio,
         Experience,
         Contact,
+        Background,
     },
     methods: {
         scrollToY(y) {

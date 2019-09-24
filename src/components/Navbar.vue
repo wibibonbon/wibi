@@ -49,6 +49,8 @@ export default {
     padding-left: 14px;
     height: 40px;
     width: 100vw;
+    position: relative;
+    z-index: 100;
 }
 
 /* Navbar links */

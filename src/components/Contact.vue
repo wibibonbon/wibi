@@ -1,5 +1,7 @@
 <template>
-    <div class="section" ref="contact"></div>
+    <div class="section" ref="contact">
+        <div class="title">Happy to meet you.</div>
+    </div>
 </template>
 
 <script>
