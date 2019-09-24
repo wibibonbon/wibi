@@ -171,8 +171,6 @@ export default {
         },
 
         emitParticles(event) {
-            console.log('Try to emit')
-
             let x = window.innerWidth / 2
             let y = window.innerHeight / 2
             if (event) {
@@ -184,7 +182,7 @@ export default {
             this.initParticles(config.particleNumber, x, y)
         },
         scrollDown(event) {
-            window.scrollTo(1000, 0)
+            this.$emit('scrollToY', window.innerHeight)
         },
     },
 }
