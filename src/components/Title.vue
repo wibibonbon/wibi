@@ -3,7 +3,7 @@
         <div class="wrapper">
             <div class="content" v-on:click="emitParticles">
                 <label>Hello, I'm Wibke. Welcome to my site.</label>
-                <div class="button" v-on:click="scrollDown">Take a look.</div>
+                <div class="button" @click="scrollDown">Take a look.</div>
             </div>
         </div>
         <canvas id="canvas" v-on:click="emitParticles"></canvas>
@@ -182,6 +182,7 @@ export default {
             this.initParticles(config.particleNumber, x, y)
         },
         scrollDown(event) {
+            console.log('scroll down')
             this.$emit('scrollToY', window.innerHeight)
         },
     },

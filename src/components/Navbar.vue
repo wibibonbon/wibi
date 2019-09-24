@@ -38,10 +38,11 @@ export default {
 <style scoped lang="scss">
 /* Style the navbar */
 .navbar {
-    overflow: hidden;
     background-color: $pink;
+    margin: 0;
+    padding: 0;
     width: 100vw;
-    //height: 60px;
+    height: 60px;
 }
 
 /* Navbar links */
@@ -50,13 +51,14 @@ export default {
     display: block;
     color: #f2f2f2;
     text-align: center;
+    margin: 0;
     padding: 14px;
     text-decoration: none;
 }
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
 }
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .section {

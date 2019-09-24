@@ -2,6 +2,7 @@
     <div class="home" ref="home">
         <Title @scrollToY="scrollToY" />
         <Navbar ref="nav" />
+
         <AboutMe />
         <Portfolio />
 
@@ -30,7 +31,8 @@ export default {
     },
     methods: {
         scrollToY(y) {
-            this.$refs.home.scrollTo({ top: y, behavior: 'smooth' })
+            console.log('scroll down 2: ' + y)
+            window.scrollTo({ top: y, behavior: 'smooth' })
         },
     },
     handleScroll() {
@@ -38,7 +40,6 @@ export default {
         this.$refs.nav.handleScroll()
     },
     mounted() {
-        console.log('mounted')
         window.addEventListener('scroll', this.handleScroll)
     },
 
@@ -51,9 +52,9 @@ export default {
 <style scoped lang="scss">
 .home {
     width: 100vw;
-    height: 100vh;
+    //height: 100%; //important for scroll down button
     //overflow-y: scroll;
-    //overflow-x: hidden;
+    overflow-x: hidden;
     position: absolute;
     top: 0;
     z-index: -5;
