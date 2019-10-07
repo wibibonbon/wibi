@@ -2,7 +2,7 @@
     <div class="section" ref="portfolio">
         <div class="container">
             <div class="content">
-                <div class="title">Work and fun.</div>
+                <h1>Work and fun.</h1>
                 <div class="flex-grid">
                     <div
                         class="flip-card grid-item"
@@ -17,7 +17,7 @@
                                 :style="{ backgroundImage: 'url(' + entry.img + ')' }"
                             ></div>
                             <div class="flip-card-back">
-                                <h1>John Doe</h1>
+                                <h2>John Doe</h2>
                                 <p>Architect & Engineer</p>
                                 <p>We love that guy</p>
                             </div>

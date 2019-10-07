@@ -1,0 +1,14 @@
+{
+    "skills": [
+        {
+            "title": "Object Oriented Programming",
+            "value": 3,
+            "max": 5
+        },
+        {
+            "title": "Smartphone",
+            "value": 5,
+            "max": 5
+        }
+    ]
+}

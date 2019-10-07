@@ -33,19 +33,14 @@ export default {
     },
     methods: {
         scrollToY(y) {
-            console.log('scroll down 2: ' + y)
             window.scrollTo({ top: y, behavior: 'smooth' })
         },
         scrollToItem(item) {
-            //console.log('scroll item: ' + this.$refs[item].tagName)
             let x = this.$refs[item].$el.offsetTop
-            console.log(item)
-            console.log(x)
             window.scrollTo({ top: x, behavior: 'smooth' })
         },
     },
     handleScroll() {
-        console.log('teeest')
         this.$refs.nav.handleScroll()
     },
     mounted() {

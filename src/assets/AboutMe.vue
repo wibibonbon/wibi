@@ -15,8 +15,25 @@
             </div>
             <div class="col">
                 <h2>Skills</h2>
-                <div v-for="skill in skills" :key="skill">
-                    <Rating :title="skill.title" :value="skill.value" />
+                <div>
+                    <label>Object Oriented Programming</label>
+                    <svg x="0px" y="0px" width="25" height="20" viewBox="0 0 25 20">
+                        <polygon
+                            fill="#ffffff"
+                            stroke="#6e0b34"
+                            points="22.04,7.32 0.78,7.32 3.331,12.952 
+		0.78,18.5 22.04,18.5 24.875,12.91 	"
+                        />
+                    </svg>
+                    <svg x="0px" y="0px" width="25" height="20" viewBox="0 0 25 20">
+                        <polygon
+                            fill="#ad1152"
+                            stroke="#6e0b34"
+                            points="22.04,7.32 0.78,7.32 3.331,12.952 
+		0.78,18.5 22.04,18.5 24.875,12.91 	"
+                        />
+                    </svg>
+                    <label>4</label>
                 </div>
             </div>
         </div>
@@ -24,18 +41,7 @@
 </template>
 
 <script>
-import Rating from './Rating'
-import Skills from '../assets/data/skills-data.json'
-export default {
-    components: {
-        Rating,
-    },
-    data() {
-        return {
-            skills: Skills.skills,
-        }
-    },
-}
+export default {}
 </script>
 
 <style scoped lang="scss">

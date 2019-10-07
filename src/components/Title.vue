@@ -2,7 +2,7 @@
     <div class="section">
         <div class="wrapper">
             <div class="content">
-                <label>Hello, I'm Wibke. Welcome to my site.</label>
+                <h1>Hello, I'm Wibke. Welcome to my site.</h1>
                 <div class="button" @click="scrollDown">Take a look.</div>
             </div>
         </div>
@@ -39,11 +39,12 @@ export default {
     padding: 0;
 }
 .wrapper {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     z-index: 50;
     display: flex;
+    padding: 20px;
 }
 .content {
     margin: auto;
@@ -57,19 +58,6 @@ export default {
     font-size: 40px;
     z-index: 50;
     position: relative;
-}
-
-h1 {
-    display: inline-block;
-    padding: 0.3em;
-    font-family: 'Megrim', cursive;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    user-select: none;
-    transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 0.68);
-    border: 0.075em solid rgba(255, 255, 255, 0.1);
 }
 </style>
 }

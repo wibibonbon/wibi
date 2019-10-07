@@ -2,7 +2,7 @@
     <div class="section" ref="timeline">
         <div class="container">
             <div class="content">
-                <div class="title">The road so far.</div>
+                <h1>The road so far.</h1>
 
                 <div id="timeline">
                     <TimeLineEntry
@@ -30,9 +30,7 @@ export default {
             entries: experienceData.entries,
         }
     },
-    mounted() {
-        console.log(experienceData)
-    },
+    mounted() {},
 }
 </script>
 

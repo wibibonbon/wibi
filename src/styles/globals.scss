@@ -35,13 +35,15 @@ body {
 
 .container {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .content {
-    margin: $side-margin $side-margin;
+    //margin: $side-margin $side-margin;
+    margin: 0px auto;
     position: relative;
     z-index: 50;
+    max-width: 1100px;
 }
 
 *::selection {
@@ -59,16 +61,17 @@ body {
     position: relative;
     z-index: 50;
 
-    .title {
+    h1 {
         font-size: 40px;
         margin-bottom: 40px;
         color: $white;
+        line-height: 40px;
     }
 }
 .section:nth-child(even) {
     position: relative;
     background-color: $white;
-    .title {
+    h1 {
         z-index: 50;
         color: $primary-color;
     }

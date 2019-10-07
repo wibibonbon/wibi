@@ -1,6 +1,6 @@
 <template>
     <div class="section" ref="contact">
-        <div class="title">Happy to meet you.</div>
+        <h1>Happy to meet you.</h1>
     </div>
 </template>
 
