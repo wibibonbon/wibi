@@ -1,14 +1,73 @@
 {
     "skills": [
         {
-            "title": "Object Oriented Programming",
-            "value": 3,
-            "max": 5
+            "title": "Image Processing",
+            "value": 4
         },
         {
-            "title": "Smartphone",
-            "value": 5,
-            "max": 5
+            "title": "Rendering",
+            "value": 4
+        },
+        {
+            "title": "GUI Design",
+            "value": 4
+        },
+        {
+            "title": "Machine Learning",
+            "value": 3
+        },
+        {
+            "title": "Security",
+            "value": 3
+        }
+    ],
+    "technologies": [
+        {
+            "title": "Vue.js",
+            "value": 4
+        },
+        {
+            "title": ".NET 4.5",
+            "value": 4
+        },
+        {
+            "title": "JavaScript",
+            "value": 4
+        },
+        {
+            "title": "C#",
+            "value": 4
+        },
+
+        {
+            "title": "Python",
+            "value": 4
+        },
+        {
+            "title": "C++",
+            "value": 3
+        },
+        {
+            "title": "OpenGL",
+            "value": 3
+        },
+        {
+            "title": "OpenCV",
+            "value": 4
+        }
+    ],
+    "other": [
+        {
+            "title": "Object-Oriented Programming",
+            "value": 4
+        },
+        {
+            "title": "German",
+            "value": 5
+        },
+        {
+            "title": "English",
+            "value": 4
         }
     ]
 }

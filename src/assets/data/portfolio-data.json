@@ -3,45 +3,60 @@
         {
             "dates": "2013",
             "img": "/images/Imagination.jpg",
-            "short_text": "Airport",
+            "short_text": "Airport Sydney",
+            "title_sub": "Touchscreen apps in Vue.js",
             "long_text": "Master Thesis: Investigation on the usability of multispectral images for age estimation of blood stains</br>I recorded images of 75 blood stains at 24 time points up to two months with two mosaic snapshot cameras with a spectral range between 465 and 975 nm recorded. After preprocessing and testing different machine learning algorithms an accuracy of 74% was achieved for a blood classification of all 24 time classes. Merging classes into 8 viable time regions even scored 85%.</br>For image capturing I used ROS and C++. Analyzation and Machine Learning algorithms were applied via Python with SciPy and PyTorch libraries."
         },
         {
             "dates": "2013",
             "img": "/images/MA.jpg",
             "short_text": "Multispectral Image Analysis",
+            "title_sub": "Age estimation of bloodstains",
+
             "long_text": "Master Thesis: Investigation on the usability of multispectral images for age estimation of blood stains</br>I recorded images of 75 blood stains at 24 time points up to two months with two mosaic snapshot cameras with a spectral range between 465 and 975 nm recorded. After preprocessing and testing different machine learning algorithms an accuracy of 74% was achieved for a blood classification of all 24 time classes. Merging classes into 8 viable time regions even scored 85%.</br>For image capturing I used ROS and C++. Analyzation and Machine Learning algorithms were applied via Python with SciPy and PyTorch libraries."
         },
         {
             "dates": "2014",
             "img": "/images/BA.jpg",
             "short_text": "Infrared Image Fusion",
+            "title_sub": "Processing of a dynamic fingerprint video",
+
             "long_text": ""
         },
         {
             "dates": "2015",
             "img": "/images/FP.jpg",
-            "short_text": "Surface Parameterisation"
+            "short_text": "Surface Parameterisation",
+            "title_sub": "Implementation of multiple algorithms",
+            "long_text": ""
         },
         {
             "dates": "2016",
             "img": "/images/Bunny.jpg",
-            "short_text": "WebGL Shading"
+            "short_text": "WebGL Shading",
+            "title_sub": "Creating of a platform and shaders for WebGL",
+            "long_text": ""
         },
         {
             "dates": "2017",
             "img": "/images/Game.jpg",
-            "short_text": "Horror Game in Unreal"
+            "short_text": "Horror Game",
+            "title_sub": "Game with horror effects in the Unreal engine",
+            "long_text": ""
         },
         {
             "dates": "2018",
             "img": "/images/Movie.jpg",
-            "short_text": "Voxelmania Movie"
+            "short_text": "Voxelmania Movie",
+            "title_sub": "Modeling and scene creation in Blender",
+            "long_text": ""
         },
         {
             "dates": "2019",
             "img": "/images/OktopusRiff.jpg",
-            "short_text": "3D Engine"
+            "short_text": "Oktopus Riff",
+            "title_sub": "3D Engine with Oculus rift support",
+            "long_text": ""
         }
     ]
 }

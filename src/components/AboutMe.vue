@@ -13,10 +13,24 @@
                     <p>When it comes to image processing, I like working not only on regular RGB or gray images but also on infrared and multispectral images. Their analysation with machine learning algorithms is one of my favourite fields.</p>
                 </div>
             </div>
-            <div class="col">
-                <h2>Skills</h2>
-                <div v-for="skill in skills" :key="skill">
-                    <Rating :title="skill.title" :value="skill.value" />
+            <div class="skills">
+                <div class="col">
+                    <h2>Fields</h2>
+                    <div v-for="skill in skills" :key="skill">
+                        <Rating :title="skill.title" :value="skill.value" />
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Technologies</h2>
+                    <div v-for="skill in technologies" :key="skill">
+                        <Rating :title="skill.title" :value="skill.value" />
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Other</h2>
+                    <div v-for="skill in other" :key="skill">
+                        <Rating :title="skill.title" :value="skill.value" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,6 +47,8 @@ export default {
     data() {
         return {
             skills: Skills.skills,
+            technologies: Skills.technologies,
+            other: Skills.other,
         }
     },
 }
@@ -40,14 +56,23 @@ export default {
 
 <style scoped lang="scss">
 .content {
-    display: flex;
+    //display: flex;
     color: $sand;
 }
 
 .col {
     text-align: justify;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.col::after {
+    content: '';
+    flex: auto;
+}
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
 }
 .head {
     display: flex;
@@ -57,10 +82,13 @@ export default {
 }
 
 .img {
-    width: 150px;
-    min-width: 150px;
-    height: 150px;
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin: 20px;
+}
+h2 {
+    text-align: center;
 }
 </style>

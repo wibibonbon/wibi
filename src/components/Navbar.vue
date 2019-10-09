@@ -52,7 +52,7 @@ export default {
     height: 40px;
     width: 100%;
     position: relative;
-    z-index: 100;
+    z-index: 900;
 }
 
 /* Navbar links */
@@ -75,7 +75,7 @@ export default {
 }
 .sticky {
     position: fixed;
-    z-index: 10000;
+    z-index: 900;
     top: 0;
     left: 0;
     right: 0;

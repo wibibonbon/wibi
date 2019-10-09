@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <label>{{title}}</label>
-        <div>
+    <div class="skill">
+        <label class="title">{{title}}</label>
+        <div class="rating-icons">
             <span v-for="n in value" v-bind:key="n">
                 <RatingFull />
             </span>
-            <span v-for="n in (max-value)" v-bind:key="n">
+            <span v-for="m in (max-value)" v-bind:key="m">
                 <RatingEmpty />
             </span>
         </div>
@@ -37,3 +37,14 @@ export default {
     methods: {},
 }
 </script>
+<style scoped lang="scss">
+.title {
+    white-space: nowrap;
+}
+.rating-icons {
+    width: max-content;
+}
+.skill {
+    margin-bottom: 10px;
+}
+</style>

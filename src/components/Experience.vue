@@ -2,15 +2,17 @@
     <div class="section" ref="timeline">
         <div class="container">
             <div class="content">
-                <h1>The road so far.</h1>
+                <div class="wrapper">
+                    <h1>The road so far.</h1>
 
-                <div id="timeline">
-                    <TimeLineEntry
-                        v-for="(entry, i) in entries"
-                        :key="i"
-                        :index="i"
-                        :entry="entry"
-                    />
+                    <div id="timeline">
+                        <TimeLineEntry
+                            v-for="(entry, i) in entries"
+                            :key="i"
+                            :index="i"
+                            :entry="entry"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,7 +88,12 @@ $timeline-color: $white;
         width: 100%;
     }
 }
-
+.wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    z-index: 50;
+}
 @media screen and (max-width: 768px) {
     #timeline {
         margin: 30px;

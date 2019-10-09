@@ -11,19 +11,19 @@
                         :index="i"
                         :entry="entry"
                     >
-                        <div class="flip-card-inner">
+                        <div class="flip-card-inner" @click="clickedCard(entry)">
                             <div
                                 class="flip-card-front"
                                 :style="{ backgroundImage: 'url(' + entry.img + ')' }"
                             ></div>
                             <div class="flip-card-back">
-                                <h2>John Doe</h2>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
+                                <h2>{{entry.short_text}}</h2>
+                                <p>{{entry.title_sub}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <PortModal v-if="showModal" @close="showModal = false" :data="selectedEntry" />
             </div>
         </div>
     </div>
@@ -31,16 +31,26 @@
 
 <script>
 import portfolioData from '../assets/data/portfolio-data.json'
+import PortModal from './PortModal'
 export default {
+    components: {
+        PortModal,
+    },
     data() {
         return {
             allEntries: portfolioData.entries,
             isActive: false,
             activeEntry: null,
+            showModal: false,
+            selectedEntry: null,
         }
     },
-
-    methods: {},
+    methods: {
+        clickedCard(entry) {
+            this.selectedEntry = entry
+            this.showModal = true
+        },
+    },
 }
 </script>
 
@@ -54,12 +64,12 @@ export default {
 }
 
 .grid-item {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     perspective: 1000px;
     background-color: transparent;
-    padding: 10px;
+    padding: 20px;
 }
 
 .flip-card-inner {
