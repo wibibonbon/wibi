@@ -248,8 +248,8 @@ header h1 {
     -moz-osx-font-smoothing: grayscale;
     appearance: none;
 }
-.no-touch .vue-form input[type='submit']:hover {
-    background: #42a2e1;
+.vue-form input[type='submit']:hover {
+    background: $pink-dark;
 }
 .vue-form input[type='submit']:focus {
     outline: none;
