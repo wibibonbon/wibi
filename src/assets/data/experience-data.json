@@ -1,38 +1,46 @@
 {
-    "entries" :[{
-        "type": "work",
-        "title": "Software Developer",
-        "dates": "2013-2018",
-        "institution": "German eForensics GmbH",
-        "summary": "Sooo good!"
-    },
-    {
-        "type": "work",
-        "title": "Software Developer",
-        "dates": "2013-2018",
-        "institution": "German eForensics GmbH",
-        "summary": "Sooo good!"
-    },
-    {
-        "type": "work",
-        "title": "Software Developer",
-        "dates": "2013-2018",
-        "institution": "German eForensics GmbH",
-        "summary": "Sooo good!"
-    },
-    {
-        "type": "work",
-        "title": "Software Developer",
-        "dates": "2013-2018",
-        "institution": "German eForensics GmbH",
-        "summary": "Sooo good!"
-    },
-    {
-        "type": "work",
-        "title": "Software Developer",
-        "dates": "2013-2018",
-        "institution": "German eForensics GmbH",
-        "summary": "Sooo good!"
-    }]}
-
-
+    "entries": [
+        {
+            "type": "work",
+            "title": "Web Developer",
+            "dates": "started 11/2018",
+            "institution": "TelosGermany",
+            "summary": "Responsive web development and design with HTML, CSS, Bootstrap and JavaScript"
+        },
+        {
+            "type": "school",
+            "title": "AI Security Program",
+            "dates": "06/2019 - 08/2019",
+            "institution": "Udacity",
+            "summary": "Security with Python"
+        },
+        {
+            "type": "work",
+            "title": "Digital Developer",
+            "dates": "02/2019 - 05/2019",
+            "institution": "Imagination Sydney",
+            "summary": "Programming in the Vue.js Framework"
+        },
+        {
+            "type": "travel",
+            "title": "Traveling the world",
+            "dates": "10/2018 - 12/2019",
+            "institution": "German eForensics GmbH",
+            "summary": "Seeing the world"
+        },
+        {
+            "type": "work",
+            "title": "Software Developer",
+            "dates": "11/2013 - 09/2013",
+            "institution": "German eForensics GmbH",
+            "summary": "Sooo good!"
+        },
+        {
+            "type": "school",
+            "title": "University",
+            "dates": "10/2010 - 09/2018",
+            "institution": "University of Koblenz-Landau",
+            "summary": "Sooo good!"
+        }
+    ]
+}

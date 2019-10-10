@@ -3,9 +3,12 @@
         <div class="timeline-icon">
             <font-awesome-icon class="font-awesome-icon" icon="coffee"></font-awesome-icon>
         </div>
+
         <div :class="`timeline-content ${side}`">
+            <h3 :class="`timeline-dates ${side}`" v-html="entry.dates"></h3>
             <h2 v-html="entry.title"></h2>
-            <p v-html="entry.summary"></p>
+
+            <!--p v-html="entry.summary"></p-->
         </div>
     </div>
 </template>
@@ -141,12 +144,23 @@ $timeline-color: $sand;
     }
 }
 
+.timeline-dates {
+    font-size: 12px;
+    position: relative;
+    margin-top: -15px;
+    margin-left: -5px;
+    color: gray;
+    float: left;
+    &.right {
+        float: right;
+        margin-right: -10px;
+    }
+}
 @media screen and (max-width: 768px) {
     .timeline-item {
         .timeline-content {
             width: 90%;
             float: right;
-
             &:before,
             &.right:before {
                 left: 10%;
@@ -159,6 +173,9 @@ $timeline-color: $sand;
         .timeline-icon {
             left: 0;
         }
+    }
+    .timeline-dates {
+        float: right;
     }
 }
 </style>
