@@ -7,7 +7,7 @@
                     <div
                         class="flip-card grid-item"
                         v-for="(entry, i) in allEntries"
-                        :key="i"
+                        :key="entry.short_text"
                         :index="i"
                         :entry="entry"
                     >

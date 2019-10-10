@@ -92,12 +92,10 @@ $timeline-color: $white;
     margin-left: 40px;
     margin-right: 40px;
     position: relative;
-    z-index: 50;
 }
 @media screen and (max-width: 768px) {
     #timeline {
         margin: 30px;
-        //padding: 0px;
         width: 90%;
         &:before {
             left: 0;

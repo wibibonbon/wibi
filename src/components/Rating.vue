@@ -2,10 +2,10 @@
     <div class="skill">
         <label class="title">{{title}}</label>
         <div class="rating-icons">
-            <span v-for="n in value" v-bind:key="n">
+            <span v-for="n in value" :key="n">
                 <RatingFull />
             </span>
-            <span v-for="m in (max-value)" v-bind:key="m">
+            <span v-for="m in (max-value)" :key="m">
                 <RatingEmpty />
             </span>
         </div>

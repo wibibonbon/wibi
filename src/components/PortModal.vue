@@ -33,11 +33,11 @@ export default {
 <style scoped lang="scss">
 .modal-mask {
     position: fixed;
-    z-index: 9000;
+    z-index: 900;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     display: table;
     transition: opacity 0.3s ease;
@@ -58,7 +58,7 @@ export default {
     transition: all 0.3s ease;
     font-family: Helvetica, Arial, sans-serif;
     position: relative;
-    z-index: 9500;
+    z-index: 950;
 }
 
 .modal-header h3 {
