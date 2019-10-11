@@ -39,15 +39,21 @@
                 </div>
             </fieldset>
         </form>
+        <Toast ref="toast" :title="toastTitle" :body="toastBody" :status="toastStatus" />
     </div>
 </template>
 
 <script>
 import emailjs from 'emailjs-com'
+import Toast from './Toast'
+
 // Regular expression from W3C HTML5.2 input specification:
 // https://www.w3.org/TR/html/sec-forms.html#email-state-typeemail
 const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
 export default {
+    components: {
+        Toast,
+    },
     data() {
         return {
             name: '',
@@ -63,6 +69,9 @@ export default {
                 reply_to_mail: 'reply_to_mail',
                 message_html: 'message_html',
             },
+            toastTitle: 'Success',
+            toastBody: 'Email sent successfully.',
+            toastStatus: 'success',
         }
     },
     mounted() {},
@@ -71,6 +80,7 @@ export default {
             this.templateParams.from_name = this.name
             this.templateParams.reply_to_mail = this.email.value
             this.templateParams.message_html = this.message.text
+
             emailjs
                 .send(
                     'gmail',
@@ -80,7 +90,10 @@ export default {
                 )
                 .then(
                     response => {
-                        alert('Your mail is sent!')
+                        this.toastTitle = 'Success'
+                        this.toastBody = 'Email sent successfully.'
+                        this.toastStatus = 'success'
+                        this.$refs.toast.show()
 
                         console.log(
                             'Email send successfully.',
@@ -95,7 +108,10 @@ export default {
                         this.templateParams.message_html = ''
                     },
                     error => {
-                        alert('Failed to send your Email.')
+                        this.toastTitle = 'Error'
+                        this.toastBody = 'Email sent successfully.'
+                        this.toastStatus = 'error'
+                        this.$refs.toast.show()
 
                         console.log('Failed to send Email', error)
                     }
