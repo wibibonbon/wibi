@@ -11,14 +11,14 @@
                         :index="i"
                         :entry="entry"
                     >
-                        <div class="flip-card-inner" @click="clickedCard(entry)">
+                        <div class="flip-card-inner hand" @click="clickedCard(entry)">
                             <div
                                 class="flip-card-front"
                                 :style="{ backgroundImage: 'url(' + entry.img + ')' }"
                             ></div>
                             <div class="flip-card-back">
-                                <h2>{{entry.short_text}}</h2>
-                                <p>{{entry.title_sub}}</p>
+                                <h2 v-html="entry.short_text"></h2>
+                                <p v-html="entry.title_sub"></p>
                             </div>
                         </div>
                     </div>

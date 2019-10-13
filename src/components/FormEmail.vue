@@ -269,9 +269,9 @@ header h1 {
 }
 .vue-form input[type='submit']:focus {
     outline: none;
-    background: $pink-dark;
 }
 .vue-form input[type='submit']:active {
+    background: $pink-dark;
     transform: scale(0.9);
 }
 

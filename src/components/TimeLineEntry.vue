@@ -6,15 +6,19 @@
 
         <div :class="`timeline-content ${side}`">
             <h3 :class="`timeline-dates ${side}`" v-html="entry.dates"></h3>
-            <h2 v-html="entry.title"></h2>
-
-            <!--p v-html="entry.summary"></p-->
+            <h2 v-html="entry.title" class="hand" @click="toggleEntry()"></h2>
+            <p v-if="isExpanded" v-html="entry.summary"></p>
         </div>
     </div>
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            isExpanded: false,
+        }
+    },
     props: {
         entry: {
             type: Object, // See timeline-data.js for entry type
@@ -28,6 +32,16 @@ export default {
     computed: {
         side() {
             return this.index % 2 == 1 ? 'left' : 'right'
+        },
+    },
+    mounted() {
+        if (this.index == 0) {
+            this.isExpanded = true
+        }
+    },
+    methods: {
+        toggleEntry() {
+            this.isExpanded = !this.isExpanded
         },
     },
 }
@@ -105,6 +119,7 @@ $timeline-color: $sand;
         width: 45%;
         background: $sand;
         padding: 20px;
+        padding-bottom: 0px;
         @include prefix(box-shadow, 0 3px 0 rgba(0, 0, 0, 0.1));
         @include prefix(border-radius, 5px);
         @include prefix(transition, all 0.3s ease);
@@ -117,6 +132,10 @@ $timeline-color: $sand;
             font-weight: 300;
             @include prefix(border-radius, 3px 3px 0 0);
         }
+        p {
+            padding-bottom: 14px;
+            text-align: justify;
+        }
 
         &:before {
             content: '';
@@ -127,18 +146,20 @@ $timeline-color: $sand;
             height: 0;
             border-top: 7px solid transparent;
             border-bottom: 7px solid transparent;
-            border-left: 7px solid $timeline-color;
+            border-left: 7px solid white;
         }
 
         &.right {
             float: right;
-
+            p {
+                padding-bottom: 0px;
+            }
             &:before {
                 content: '';
                 right: 45%;
                 left: inherit;
                 border-left: 0;
-                border-right: 7px solid $timeline-color;
+                border-right: 7px solid white;
             }
         }
     }
@@ -166,7 +187,7 @@ $timeline-color: $sand;
                 left: 10%;
                 margin-left: -6px;
                 border-left: 0;
-                border-right: 7px solid $timeline-color;
+                border-right: 7px solid white;
             }
         }
 

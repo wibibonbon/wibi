@@ -4,11 +4,12 @@
             <div class="modal-wrapper">
                 <div class="modal-container">
                     <div class="modal-header">
-                        <slot name="header">{{data.short_text}}</slot>
+                        <h3 name="header">{{data.short_text}}</h3>
+                        <div class="carousel"></div>
                     </div>
 
                     <div class="modal-body">
-                        <slot name="body">{{data.long_text}}</slot>
+                        <span name="body" v-html="data.long_text"></span>
                     </div>
 
                     <div class="modal-footer">
@@ -59,11 +60,12 @@ export default {
     font-family: Helvetica, Arial, sans-serif;
     position: relative;
     z-index: 950;
+    display: inline-block;
 }
 
 .modal-header h3 {
     margin-top: 0;
-    color: #42b983;
+    color: $blue;
 }
 
 .modal-body {
@@ -71,9 +73,28 @@ export default {
 }
 
 .modal-default-button {
+    border: none;
+    background: $pink;
+    border-radius: 0.25em;
+    padding: 12px 20px;
+    color: #ffffff;
+    font-weight: bold;
     float: right;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    appearance: none;
 }
-
+.modal-default-button:hover {
+    background: $pink-dark;
+}
+.modal-default-button:focus {
+    outline: none;
+}
+.modal-default-button:active {
+    background: $pink-dark;
+    transform: scale(0.9);
+}
 /*
  * The following styles are auto-applied to elements with
  * transition="modal" when their visibility is toggled

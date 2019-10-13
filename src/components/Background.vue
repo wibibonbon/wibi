@@ -185,7 +185,7 @@ export default {
 
 <style scoped lang="scss">
 .bg {
-    z-index: 1;
+    z-index: -10;
     height: 100%;
     position: relative;
 }
