@@ -1,12 +1,13 @@
 <template>
     <div class="timeline-item">
         <div class="timeline-icon">
-            <font-awesome-icon class="font-awesome-icon" icon="coffee"></font-awesome-icon>
+            <font-awesome-icon class="font-awesome-icon" :icon="icon"></font-awesome-icon>
         </div>
 
         <div :class="`timeline-content ${side}`">
             <h3 :class="`timeline-dates ${side}`" v-html="entry.dates"></h3>
             <h2 v-html="entry.title" class="hand" @click="toggleEntry()"></h2>
+            <p v-if="isExpanded" v-html="entry.institution" class="institution"></p>
             <p v-if="isExpanded" v-html="entry.summary"></p>
         </div>
     </div>
@@ -32,6 +33,20 @@ export default {
     computed: {
         side() {
             return this.index % 2 == 1 ? 'left' : 'right'
+        },
+        icon() {
+            switch (this.entry.type) {
+                case 'work':
+                    return 'laptop-code'
+                case 'travel':
+                    return 'globe-asia'
+                case 'school':
+                    return 'coffee'
+                case 'life':
+                    return 'home'
+                default:
+                    return 'coffee'
+            }
         },
     },
     mounted() {
@@ -96,7 +111,6 @@ $timeline-color: $sand;
     margin-bottom: 50px;
     position: relative;
     @extend %clearfix;
-
     .timeline-icon {
         background: $white;
         width: 50px;
@@ -106,12 +120,14 @@ $timeline-color: $sand;
         left: 50%;
         overflow: hidden;
         margin-left: -23px;
-        color: $primary-color;
+        color: $pink;
         @include prefix(border-radius, 50%);
 
         .font-awesome-icon {
             position: relative;
-            top: 14px;
+            top: 10px;
+            height: 30px;
+            width: 30px;
         }
     }
 
@@ -133,10 +149,10 @@ $timeline-color: $sand;
             @include prefix(border-radius, 3px 3px 0 0);
         }
         p {
-            padding-bottom: 14px;
             text-align: justify;
+            padding-bottom: 14px;
         }
-
+        //triangles
         &:before {
             content: '';
             position: absolute;
@@ -154,6 +170,7 @@ $timeline-color: $sand;
             p {
                 padding-bottom: 0px;
             }
+            //triangles
             &:before {
                 content: '';
                 right: 45%;
@@ -176,6 +193,11 @@ $timeline-color: $sand;
         float: right;
         margin-right: -10px;
     }
+}
+.institution {
+    color: $pink;
+    font-weight: bold;
+    padding-bottom: 0px !important;
 }
 @media screen and (max-width: 768px) {
     .timeline-item {

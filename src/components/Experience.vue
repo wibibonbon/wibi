@@ -41,27 +41,11 @@ export default {
 $timeline-color: $white;
 
 // Mixins and Placeholders
-%clearfix {
-    &:after,
-    &:before {
-        content: '';
-        display: block;
-        width: 100%;
-        clear: both;
-    }
-}
 
 @mixin prefix($prop, $val) {
     @each $prefix in '-webkit-', '-moz-', '-ms-', '' {
         #{$prefix}#{$prop}: $val;
     }
-}
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
 }
 
 // Timeline
@@ -70,6 +54,7 @@ $timeline-color: $white;
     margin: 30px auto;
     position: relative;
     @include prefix(transition, all 0.4s ease);
+    //middle line
 
     &:before {
         content: '';

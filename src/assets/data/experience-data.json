@@ -9,38 +9,52 @@
         },
         {
             "type": "school",
-            "title": "AI Security Program",
+            "title": "Secure and Private AI Scholarship",
             "dates": "06/2019 - 08/2019",
             "institution": "Udacity",
-            "summary": "Security with Python"
+            "summary": "This scholarship course from Udacity gave me insights into data security and privacy in neural networks, which I think is pretty important in these big data days. I already used multiple networks during university but this time I explicitly learned about local and global differential privacy and federated and encrypted learning techniques."
         },
         {
             "type": "work",
             "title": "Digital Developer",
             "dates": "02/2019 - 05/2019",
             "institution": "Imagination Sydney",
-            "summary": "Programming in the Vue.js Framework"
+            "summary": "While I stayed in Sydney, I got the chance to work for an amazingly creative company. The project was to develop three separate touchscreen applications that are part of the visitor information center for the new Western Sydney Airport.<br/><br/>Together with my colleague, we implemented these apps in the Vue,js framework based on some beautiful templates from the design team. Completing the static input with some nice transitions and animations put the cherry on the cake."
         },
         {
             "type": "travel",
-            "title": "Traveling the world",
+            "title": "Hello Down Under",
             "dates": "10/2018 - 12/2019",
-            "institution": "German eForensics GmbH",
-            "summary": "Seeing the world"
+            "institution": "Australia, South-East-Asia",
+            "summary": "After 12 years of studying and working, I decided to take a 'little' break from life and finally see something more of the world. So, I spent a year in Australia where I traveled along the east coast all the way between the Daintree rainforest and Melbourne. Nevertheless, my favorite place was Tasmania because of its versatile nature and especially relaxed animals."
         },
         {
             "type": "work",
             "title": "Software Developer",
-            "dates": "11/2013 - 09/2013",
+            "dates": "11/2013 - 09/2018",
             "institution": "German eForensics GmbH",
-            "summary": "Sooo good!"
+            "summary": "In these almost 5 years I was one of the three core developers. After creating a new GUI with optimised workflows I also participated in more functional features, e.g. image processing or data export. Together in this team, we evolved our collaborational coding skills in respect of versioning, clean code, frequent committs, and of course... comments."
+        },
+        {
+            "type": "work",
+            "title": "Web Developer",
+            "dates": "08/2012 - 07/2013",
+            "institution": "Alphajump GmbH",
+            "summary": "It started as an internship and evolved into a working student position. Here I learned the basics of web programming with Ruby on Rails. From MVC, CRUD, and DRY principles to relational databases with MySql and designs with HAML and SASS. Additionally, I designed an App version for the web platform."
         },
         {
             "type": "school",
-            "title": "University",
+            "title": "M.Sc. Computervisualistics",
             "dates": "10/2010 - 09/2018",
             "institution": "University of Koblenz-Landau",
-            "summary": "Sooo good!"
+            "summary": "Studying Computervisualistics not only teaches you general important programming knowledge but also emphasizes image processing and the generation of computer graphics.<br/><br>I took a special interest in multispectral image processing, medical visualizations, machine learning, and the generation of animations. Sometimes these fields are touching hands and generate interesting projects."
+        },
+        {
+            "type": "life",
+            "title": "My Life Before Coding",
+            "dates": " until 09/2010",
+            "institution": "Life",
+            "summary": "I was born in Berlin and already moved to the Westerwald as a child. I played the violin in school though I began to get more interested in Rock and Metal. While some things change I still read comics and books, and play video games but not that much that I used to.<br/><br/>After completing my B.A. in Architecture and working for some years in an Architectural office, I already had enough and wanted a change. Since I became more and more interested in the software I used in my Architerual work, I wanted to dive deeper into it and decided to study again.<br/><br/>This time, I decided to study Computervisualistics and I'm so glad that I started over!"
         }
     ]
 }

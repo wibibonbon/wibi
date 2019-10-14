@@ -9,6 +9,9 @@ import {
     faBars,
     faArrowAltCircleRight,
     faArrowAltCircleLeft,
+    faGlobeAsia,
+    faLaptopCode,
+    faHome,
 } from '@fortawesome/free-solid-svg-icons'
 //import { starReg } from '@fortawesome/free-regular-svg-icons'
 import {
@@ -27,7 +30,10 @@ library.add(
     faBars,
     faTelegramPlane,
     faLinkedinIn,
-    faXing
+    faXing,
+    faGlobeAsia,
+    faLaptopCode,
+    faHome
 )
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
