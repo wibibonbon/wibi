@@ -3,7 +3,13 @@ import App from './App.vue'
 import router from './router'
 import './styles/globals.scss'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCoffee, faStar, faBars } from '@fortawesome/free-solid-svg-icons'
+import {
+    faCoffee,
+    faStar,
+    faBars,
+    faArrowAltCircleRight,
+    faArrowAltCircleLeft,
+} from '@fortawesome/free-solid-svg-icons'
 //import { starReg } from '@fortawesome/free-regular-svg-icons'
 import {
     faTelegramPlane,
@@ -13,7 +19,16 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faCoffee, faStar, faBars, faTelegramPlane, faLinkedinIn, faXing)
+library.add(
+    faCoffee,
+    faStar,
+    faArrowAltCircleRight,
+    faArrowAltCircleLeft,
+    faBars,
+    faTelegramPlane,
+    faLinkedinIn,
+    faXing
+)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

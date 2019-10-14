@@ -49,7 +49,8 @@ import Toast from './Toast'
 
 // Regular expression from W3C HTML5.2 input specification:
 // https://www.w3.org/TR/html/sec-forms.html#email-state-typeemail
-const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+const emailRegExp = /^[a-zA-Z0-9.!#$%&'*=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+
 export default {
     components: {
         Toast,
@@ -154,11 +155,10 @@ header h1 {
 
 .vue-form {
     font-size: 16px;
-    width: 500px;
+    max-width: 500px;
     padding: 15px;
     border-radius: 4px;
     margin: 0 auto;
-    width: 500px;
     background-color: $blue;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
 }

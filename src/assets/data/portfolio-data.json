@@ -10,9 +10,14 @@
         {
             "dates": "2013",
             "img": "/images/MA.jpg",
+            "images": [
+                "/images/MA.jpg",
+                "/images/Imagination.jpg",
+                "/images/BA.jpg",
+                "/images/FP.jpg"
+            ],
             "short_text": "Multispectral Image Analysis",
             "title_sub": "Age estimation of bloodstains",
-
             "long_text": "Master Thesis: Investigation on the usability of multispectral images for age estimation of blood stains<br></br>I recorded images of 75 blood stains at 24 time points up to two months with two mosaic snapshot cameras with a spectral range between 465 and 975 nm recorded. After preprocessing and testing different machine learning algorithms an accuracy of 74% was achieved for a blood classification of all 24 time classes. Merging classes into 8 viable time regions even scored 85%.</br>For image capturing I used ROS and C++. Analyzation and Machine Learning algorithms were applied via Python with SciPy and PyTorch libraries."
         },
         {
