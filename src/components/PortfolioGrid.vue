@@ -17,8 +17,10 @@
                                 :style="{ backgroundImage: 'url(' + entry.img + ')' }"
                             ></div>
                             <div class="flip-card-back">
-                                <h2 v-html="entry.short_text"></h2>
-                                <p v-html="entry.title_sub"></p>
+                                <div class="card-content">
+                                    <h2 v-html="entry.short_text"></h2>
+                                    <p v-html="entry.title_sub"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -80,6 +82,7 @@ export default {
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
@@ -97,11 +100,15 @@ export default {
     background-position-x: 50%;
 }
 .flip-card-back {
-    display: grid;
-    align-content: center;
     background-color: $primary-color;
     color: $white;
+    display: table;
+    table-layout: fixed;
     transform: rotateY(180deg);
+}
+.card-content {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 p {

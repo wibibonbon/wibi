@@ -16,19 +16,19 @@
             <div class="skills">
                 <div class="col">
                     <h2>Fields</h2>
-                    <div v-for="skill in skills" :key="skill">
+                    <div v-for="(skill, i) in skills" :key="'skill_'+i">
                         <Rating :title="skill.title" :value="skill.value" />
                     </div>
                 </div>
                 <div class="col">
                     <h2>Technologies</h2>
-                    <div v-for="skill in technologies" :key="skill">
+                    <div v-for="(skill,i) in technologies" :key="'technology_'+i">
                         <Rating :title="skill.title" :value="skill.value" />
                     </div>
                 </div>
                 <div class="col">
                     <h2>Other</h2>
-                    <div v-for="skill in other" :key="skill">
+                    <div v-for="(skill,i) in other" :key="'other_'+i">
                         <Rating :title="skill.title" :value="skill.value" />
                     </div>
                 </div>
@@ -71,9 +71,11 @@ export default {
 }
 .skills {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+
     flex-flow: wrap;
 }
+
 .head {
     display: flex;
     align-items: center;

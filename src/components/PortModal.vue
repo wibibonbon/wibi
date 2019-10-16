@@ -12,7 +12,7 @@
                                     <img class="img" :src="currentSource" />
                                 </div>
                             </div>
-                            <font-awesome-icon
+                            <!--font-awesome-icon
                                 class="button-left"
                                 @click="plusSlide(-1)"
                                 icon="arrow-alt-circle-left"
@@ -21,7 +21,7 @@
                                 class="button-right"
                                 @click="plusSlide(1)"
                                 icon="arrow-alt-circle-right"
-                            ></font-awesome-icon>
+                            ></font-awesome-icon-->
                         </div>
                     </div>
 

@@ -14,7 +14,7 @@
                     <div
                         :class="[{active:isActive},'grid-item item']"
                         v-for="(entry, i) in displayEntries"
-                        :key="i"
+                        :key="'disEntry_'+i"
                         :index="i"
                         :entry="entry"
                         :style="{ backgroundImage: 'url(' + entry.img + ')' }"

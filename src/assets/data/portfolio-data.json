@@ -3,19 +3,15 @@
         {
             "dates": "2013",
             "img": "/images/Imagination.jpg",
+            "images": ["/images/Imagination.jpg"],
             "short_text": "Airport Sydney",
             "title_sub": "Touchscreen apps in Vue.js",
-            "long_text": ""
+            "long_text": "Three separate touchscreen apps were developed by my colleague and me with the Vue.js framework for the new visitor information center of the Western Sydney Airport. We received static images from the designers and transformed them into beautiful applications with nice transitions and easy usability."
         },
         {
             "dates": "2013",
             "img": "/images/MA.jpg",
-            "images": [
-                "/images/MA.jpg",
-                "/images/Imagination.jpg",
-                "/images/BA.jpg",
-                "/images/FP.jpg"
-            ],
+            "images": ["/images/MA.jpg"],
             "short_text": "Multispectral Image Analysis",
             "title_sub": "Age estimation of bloodstains",
             "long_text": "Master Thesis: Investigation on the usability of multispectral images for age estimation of blood stains<br></br>I recorded images of 75 blood stains at 24 time points up to two months with two mosaic snapshot cameras with a spectral range between 465 and 975 nm recorded. After preprocessing and testing different machine learning algorithms an accuracy of 74% was achieved for a blood classification of all 24 time classes. Merging classes into 8 viable time regions even scored 85%.</br>For image capturing I used ROS and C++. Analyzation and Machine Learning algorithms were applied via Python with SciPy and PyTorch libraries."
@@ -23,6 +19,7 @@
         {
             "dates": "2014",
             "img": "/images/BA.jpg",
+            "images": ["/images/BA.jpg"],
             "short_text": "Infrared Image Fusion",
             "title_sub": "Processing of a dynamic fingerprint video",
 
@@ -31,6 +28,7 @@
         {
             "dates": "2015",
             "img": "/images/FP.jpg",
+            "images": ["/images/FP.jpg"],
             "short_text": "Surface Parameterisation",
             "title_sub": "Implementation of multiple algorithms",
             "long_text": "In a small group of four people, we implemented different parametrization methods. The Seamster algorithm optimized the Graphcut in respect to vertex visibility and distortion. A local parametrization was achieved with Instant Field-Aligned Meshes.</p><p>Since the topic was mathematically very complex - at least to us -, we did a lot of team/pair programming in C++."
@@ -38,6 +36,7 @@
         {
             "dates": "2016",
             "img": "/images/Bunny.jpg",
+            "images": ["/images/Bunny.jpg"],
             "short_text": "WebGL Shading",
             "title_sub": "Creating of a platform and shaders for WebGL",
             "long_text": "<a href='http://souch.iekadou.com/' target='_blank'>Shader Ouch!</a> is a web application, where the users learn how to code Shaders with WebGL. I did this project in pair programming with Jonas Braun. We also implemented some example Shaders like this cute Bunny in watercolour style."
@@ -45,6 +44,7 @@
         {
             "dates": "2017",
             "img": "/images/Game.jpg",
+            "images": ["/images/Game.jpg"],
             "short_text": "Horror Game",
             "title_sub": "Game with horror effects in the Unreal engine",
             "long_text": "'Project Omega' is a little Horrorgame that we developed with four people using the Unreal Engine. In this first person game the player needs to get away from a monster, while overcoming traps and madness effects."
@@ -52,6 +52,7 @@
         {
             "dates": "2018",
             "img": "/images/Movie.jpg",
+            "images": ["/images/Movie.jpg"],
             "short_text": "Voxelmania Movie",
             "title_sub": "Modeling and scene creation in Blender",
             "long_text": "In a group project, we created this fantastic short movie about roboter Lisa. Everyone who likes video games, selfmade 8bit-music, roboter and explosions must watch it! The youtube link is <a href='https://www.youtube.com/watch?v=zOrBq5knVtI' target='_blank'>here</a>.</p><p>My part was the design and creation of the scene with little Qbert (5:38) in Blender and the design of the virtual campus with the Unreal Engine. I also did frame tweaking with Photoshop."
@@ -59,6 +60,7 @@
         {
             "dates": "2019",
             "img": "/images/OktopusRiff.jpg",
+            "images": ["/images/OktopusRiff.jpg"],
             "short_text": "Oktopus Riff",
             "title_sub": "3D Engine with Oculus rift support",
             "long_text": "In a team of 12 people, we developed a complete engine with Oculus Rift support from scratch. My focus was the implementation of physical collision with the bullet library. Everything was done in C++."

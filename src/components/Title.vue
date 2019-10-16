@@ -23,8 +23,7 @@ export default {
 .button {
     font-size: 30px;
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 10px;
-    margin-top: 40px;
+    margin: 40px auto;
     padding: 20px;
     color: $pink;
     border-radius: 5px;

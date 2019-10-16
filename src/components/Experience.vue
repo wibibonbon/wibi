@@ -8,7 +8,7 @@
                     <div id="timeline">
                         <TimeLineEntry
                             v-for="(entry, i) in entries"
-                            :key="i"
+                            :key="'entry_'+i"
                             :index="i"
                             :entry="entry"
                         />

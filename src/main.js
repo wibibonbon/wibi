@@ -5,15 +5,15 @@ import './styles/globals.scss'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
     faCoffee,
-    faStar,
     faBars,
     faArrowAltCircleRight,
     faArrowAltCircleLeft,
     faGlobeAsia,
     faLaptopCode,
     faHome,
+    faStar as fasStar,
 } from '@fortawesome/free-solid-svg-icons'
-//import { starReg } from '@fortawesome/free-regular-svg-icons'
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons'
 import {
     faTelegramPlane,
     faLinkedinIn,
@@ -24,7 +24,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(
     faCoffee,
-    faStar,
+    fasStar,
     faArrowAltCircleRight,
     faArrowAltCircleLeft,
     faBars,
@@ -33,7 +33,8 @@ library.add(
     faXing,
     faGlobeAsia,
     faLaptopCode,
-    faHome
+    faHome,
+    farStar
 )
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
