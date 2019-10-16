@@ -27,6 +27,7 @@ export default {
             }
         },
         nav(item) {
+            console.log(item)
             this.$emit('scrollToItem', item)
         },
         toggleMenu() {
