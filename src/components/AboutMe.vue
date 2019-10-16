@@ -13,7 +13,8 @@
                     <p>When it comes to image processing, I like working not only on regular RGB or gray images but also on infrared and multispectral images. Their analysation with machine learning algorithms is one of my favourite fields.</p>
                 </div>
             </div>
-            <div class="skills">
+            <Wordcloud />
+            <!--div class="skills">
                 <div class="col">
                     <h2>Fields</h2>
                     <div v-for="(skill, i) in skills" :key="'skill_'+i">
@@ -32,23 +33,25 @@
                         <Rating :title="skill.title" :value="skill.value" />
                     </div>
                 </div>
-            </div>
+            </div-->
         </div>
     </div>
 </template>
 
 <script>
-import Rating from './Rating'
-import Skills from '../assets/data/skills-data.json'
+//import Rating from './Rating'
+//import Skills from '../assets/data/skills-data.json'
+import Wordcloud from './Wordcloud'
 export default {
     components: {
-        Rating,
+        Wordcloud,
+        //Rating,
     },
     data() {
         return {
-            skills: Skills.skills,
-            technologies: Skills.technologies,
-            other: Skills.other,
+            //skills: Skills.skills,
+            //technologies: Skills.technologies,
+            //other: Skills.other,
         }
     },
 }
