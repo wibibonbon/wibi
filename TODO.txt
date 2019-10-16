@@ -1,0 +1,13 @@
+#All Browsers
+- Add Wordcloud
+- Add more images to portfolio
+- fix view for mobile
+- close navbar after click
+- no scroll outside with popup open
+- close popup when click outside
+
+#Firefox
+- Mouse over text shouldn't change cursor
+
+#Edge
+- fix the fix navbar problem
