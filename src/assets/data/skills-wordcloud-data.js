@@ -33,4 +33,12 @@ export const frequency_list = [
     { text: 'svn', size: 10 },
     { text: 'frontend', size: 35 },
     { text: 'shader', size: 35 },
+    { text: 'vue.js', size: 45 },
+    { text: 'bitbucket', size: 10 },
+    { text: 'aws', size: 10 },
+    { text: 'responsive', size: 10 },
+    { text: 'bootstrap', size: 10 },
+    { text: 'indesign', size: 15 },
+    { text: 'security', size: 10 },
+    { text: 'd3.js', size: 20 },
 ]
