@@ -82,3 +82,8 @@ body {
 .hand:hover {
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    .section {
+        padding-right: 0px;
+    }
+}

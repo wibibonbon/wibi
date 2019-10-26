@@ -27,11 +27,14 @@ export default {
             }
         },
         nav(item) {
-            console.log(item)
+            this.closeMenu()
             this.$emit('scrollToItem', item)
         },
         toggleMenu() {
             this.showMenu = !this.showMenu
+        },
+        closeMenu() {
+            this.showMenu = false
         },
     },
     mounted() {
@@ -52,7 +55,7 @@ export default {
     margin: 0;
     height: 40px;
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 900;
 }
 
@@ -65,6 +68,7 @@ export default {
     margin: 5px;
     padding: 5px;
     text-decoration: none;
+    background-color: transparent;
 }
 .navbar label:hover {
     background-color: rgba(255, 255, 255, 0.5);

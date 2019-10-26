@@ -1,6 +1,6 @@
 <template>
     <div class="home" ref="home">
-        <Background>
+        <Background @click="hideElements">
             <Title @scrollToY="scrollToY" ref="title" />
             <Navbar ref="nav" @scrollToItem="scrollToItem" />
             <AboutMe ref="about" />
@@ -95,6 +95,10 @@ export default {
                 }
             }
             animateScroll()
+        },
+        hideElements() {
+            console.log('teeest')
+            this.ref.$nav.closeMenu()
         },
     },
 }

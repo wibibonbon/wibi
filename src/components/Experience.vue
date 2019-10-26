@@ -79,6 +79,10 @@ $timeline-color: $white;
     position: relative;
 }
 @media screen and (max-width: 768px) {
+    .wrapper {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     #timeline {
         margin: 30px;
         width: 90%;

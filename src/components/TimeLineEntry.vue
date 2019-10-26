@@ -207,7 +207,7 @@ $timeline-color: $sand;
             &:before,
             &.right:before {
                 left: 10%;
-                margin-left: -6px;
+                //margin-left: -6px;
                 border-left: 0;
                 border-right: 7px solid white;
             }
@@ -221,4 +221,5 @@ $timeline-color: $sand;
         float: right;
     }
 }
+
 </style>

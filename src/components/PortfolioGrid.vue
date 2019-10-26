@@ -114,4 +114,10 @@ export default {
 p {
     margin: 0;
 }
+@media screen and (max-width: 768px) {
+    .grid-item {
+        width: 150px;
+        height: 150px;
+    }
+}
 </style>

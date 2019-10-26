@@ -13,7 +13,7 @@
                     <p>When it comes to image processing, I like working not only on regular RGB or gray images but also on infrared and multispectral images. Their analysation with machine learning algorithms is one of my favourite fields.</p>
                 </div>
             </div>
-            <Wordcloud />
+            <Wordcloud :wordlist="words" />
             <!--div class="skills">
                 <div class="col">
                     <h2>Fields</h2>
@@ -42,6 +42,8 @@
 //import Rating from './Rating'
 //import Skills from '../assets/data/skills-data.json'
 import Wordcloud from './Wordcloud'
+import { frequency_list } from '../assets/data/skills-wordcloud-data.js'
+
 export default {
     components: {
         Wordcloud,
@@ -49,6 +51,7 @@ export default {
     },
     data() {
         return {
+            words: frequency_list,
             //skills: Skills.skills,
             //technologies: Skills.technologies,
             //other: Skills.other,
@@ -95,5 +98,15 @@ export default {
 }
 h2 {
     text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .head {
+        display: grid;
+    }
+    .img {
+        margin: auto;
+    }
+    h2 {
+    }
 }
 </style>

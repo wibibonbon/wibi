@@ -7,7 +7,6 @@
 <script>
 import * as d3 from 'd3'
 import * as cloud from 'd3-cloud'
-import { frequency_list } from '../assets/data/skills-wordcloud-data.js'
 
 const color = d3
     .scaleLinear()
@@ -31,12 +30,12 @@ export default {
     data() {
         return {}
     },
-    props: {},
+    props: { wordlist: Array },
     computed: {},
     mounted() {
         cloud()
             .size([800, 300])
-            .words(frequency_list)
+            .words(this.wordlist)
             .rotate(0)
             .fontSize(function(d) {
                 return d.size
