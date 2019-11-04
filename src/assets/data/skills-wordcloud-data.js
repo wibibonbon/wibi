@@ -1,5 +1,5 @@
 export const frequency_list = [
-    { text: 'computervision', size: 70 },
+    { text: 'visualisation', size: 70 },
     { text: 'images', size: 50 },
     { text: 'processing', size: 10 },
     { text: 'rendering', size: 40 },

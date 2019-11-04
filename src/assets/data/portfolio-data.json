@@ -3,7 +3,11 @@
         {
             "dates": "2013",
             "img": "/images/Imagination.jpg",
-            "images": ["/images/Imagination.jpg"],
+            "images": [
+                "/images/Imagination.jpg",
+                "/images/pods.jpg",
+                "/images/pods2.jpg"
+            ],
             "short_text": "Airport Sydney",
             "title_sub": "Touchscreen apps in Vue.js",
             "long_text": "Three separate touchscreen apps were developed by my colleague and me with the Vue.js framework for the new visitor information center of the Western Sydney Airport. We received static images from the designers and transformed them into beautiful applications with nice transitions and easy usability."
@@ -36,7 +40,11 @@
         {
             "dates": "2016",
             "img": "/images/Bunny.jpg",
-            "images": ["/images/Bunny.jpg"],
+            "images": [
+                "/images/Bunny.jpg",
+                "/images/shader_dragon.jpg",
+                "/images/shader_dragon2.jpg"
+            ],
             "short_text": "WebGL Shading",
             "title_sub": "Creating of a platform and shaders for WebGL",
             "long_text": "<a href='http://souch.iekadou.com/' target='_blank'>Shader Ouch!</a> is a web application, where the users learn how to code Shaders with WebGL. I did this project in pair programming with Jonas Braun. We also implemented some example Shaders like this cute Bunny in watercolour style."

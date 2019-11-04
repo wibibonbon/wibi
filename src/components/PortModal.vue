@@ -12,21 +12,23 @@
                                     <img class="img" :src="currentSource" />
                                 </div>
                             </div>
-                            <!--font-awesome-icon
+                            <font-awesome-icon
+                                v-if="hasMultipleImages"
                                 class="button-left"
                                 @click="plusSlide(-1)"
                                 icon="arrow-alt-circle-left"
                             ></font-awesome-icon>
                             <font-awesome-icon
+                                v-if="hasMultipleImages"
                                 class="button-right"
                                 @click="plusSlide(1)"
                                 icon="arrow-alt-circle-right"
-                            ></font-awesome-icon-->
+                            ></font-awesome-icon>
                         </div>
                     </div>
 
                     <div class="modal-body">
-                        <span name="body" v-html="data.long_text"></span>
+                        <div name="body" v-html="data.long_text"></div>
                     </div>
 
                     <div class="modal-footer">
@@ -51,6 +53,11 @@ export default {
     },
     props: {
         data: Object,
+    },
+    computed: {
+        hasMultipleImages() {
+            return this.data.images.length > 1
+        },
     },
     mounted() {
         this.slideSource = this.data.images
@@ -113,7 +120,6 @@ export default {
     font-weight: bold;
     font-size: 10px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
     height: 40px;
     width: 40px;
@@ -121,11 +127,11 @@ export default {
     border-radius: 50%;
 }
 .button-right {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: -20px;
+    border-radius: 50%;
 }
 .button-left {
-    left: 0;
+    left: -20px;
 }
 .carousel {
     position: relative;
@@ -136,28 +142,30 @@ export default {
     overflow: hidden;
 }
 .img {
-    max-width: 100%;
+    max-width: 300px;
     max-height: 250px;
 }
 .modal-mask {
     position: fixed;
-    z-index: 900;
+    z-index: 1000;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display: table;
+    display: grid;
     transition: opacity 0.3s ease;
 }
 
 .modal-wrapper {
     display: table-cell;
     vertical-align: middle;
+    max-height: 90vh;
 }
 
 .modal-container {
     max-width: 400px;
+    max-height: 95vh;
     margin: 10px;
     padding: 20px 30px;
     background-color: #fff;
@@ -176,10 +184,15 @@ export default {
 }
 
 .modal-body {
-    margin: 20px 0;
+    margin: 20px 0 40px 0px;
+    //max-height: 25vh;
+    overflow-y: auto;
 }
 
 .modal-default-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
     border: none;
     background: $pink;
     border-radius: 0.25em;
@@ -223,5 +236,10 @@ export default {
 .modal-leave-active .modal-container {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+@media screen and (max-width: 500px) {
+    .modal-body {
+        max-height: 25vh;
+    }
 }
 </style>

@@ -34,7 +34,7 @@ export default {
     computed: {},
     mounted() {
         cloud()
-            .size([800, 300])
+            .size([Math.min(768, window.outerWidth), 300])
             .words(this.wordlist)
             .rotate(0)
             .fontSize(function(d) {
@@ -42,12 +42,19 @@ export default {
             })
             .on('end', this.draw)
             .start()
+
+        console.log(Math.min(768, window.outerWidth))
     },
     methods: {
         draw(words) {
             d3.select('.wordcloud')
                 .append('g')
-                .attr('transform', 'translate(320,200)')
+                .attr(
+                    'transform',
+                    'translate(' +
+                        Math.min(768, window.outerWidth) / 3.0 +
+                        ',200)'
+                )
                 .selectAll('text')
                 .data(words)
                 .enter()
@@ -78,7 +85,9 @@ export default {
 }
 .wordcloud {
     position: relative;
-    width: 850px;
+    width: 100vw;
+    max-width: 800px;
     height: 350px;
+    margin: auto;
 }
 </style>

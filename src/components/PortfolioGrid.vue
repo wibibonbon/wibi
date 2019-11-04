@@ -52,6 +52,9 @@ export default {
             this.selectedEntry = entry
             this.showModal = true
         },
+        closeModal() {
+            if (this.showModal) this.showModal = false
+        },
     },
 }
 </script>
@@ -114,7 +117,7 @@ export default {
 p {
     margin: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 470px) {
     .grid-item {
         width: 150px;
         height: 150px;
